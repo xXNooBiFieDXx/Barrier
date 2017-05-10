@@ -8,6 +8,7 @@ public class GameManager : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
         Physics2D.IgnoreLayerCollision(9, 10); // Make sure enemy do not collide with their own projectile.
+        Physics2D.IgnoreLayerCollision(8, 11); // Make sure reflected projectile do not collide with player.
         Physics2D.IgnoreLayerCollision(10, 11); // Make sure projectile do not collide with each other.
         Physics2D.IgnoreLayerCollision(10, 10); // Make sure projectile do not collide with each other.
         Physics2D.IgnoreLayerCollision(11, 11); // Make sure projectile do not collide with each other.
